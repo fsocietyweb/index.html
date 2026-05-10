@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fs0c13ty - Media Player</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/sidebar.css">
+  <link rel="stylesheet" href="../assets/css/music.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<body>
+<aside class="sidebar-left">
+  <ul>
+
+    <li><strong>This Website</strong></li>
+    <li><a href="../../../index.html">Home</a></li>
+    <li><a href="aboutus.html"> About us</a></li>
+    <li><a href="musicplayer.html">Music Player</a></li>
+
+    <li><strong>Other Websites</strong></li>
+    <li><a href="https://aeroxptech.github.io/index">Techx Homepage</a></li>
+    <li><a href="https://oskarn143-cpu.github.io/phasmo-help/">Bytes Homepage</a></li>
+
+  </ul>
+</aside>
+  <div class="player">
+    <h1>Fs0c13ty M3d14 Pl4y3r ARCHIVED!!!</h1>
+    <h4>Please mail me if content needs to be Removed/Added aeroxptech@gmail.com</h4><br>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search Your Music..." onkeyup="if(event.key === 'Enter') searchMusic()">
+      <button onclick="searchMusic()">Suchen</button>
+    </div>
+
+    <div id="searchResults" class="results"></div>
+
+    <div class="now-playing">
+      <div id="title" class="title">Nothing Being Played Right Now</div>
+      <div id="artist" class="artist"></div>
+    </div>
+
+    <div class="visualizer" id="visualizer">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <audio id="audio" style="display: none;"></audio>
+  </div>
+
+<footer class="footer">
+    <p>Made By Techy32 & fsociety_linux | 2026</p>
+</footer>
+<script src="../assets/javascript/music.js"></script>
+</body>
+</html>

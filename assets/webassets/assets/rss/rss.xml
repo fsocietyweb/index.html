@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Webcore - Frutiger Aero & Web 2.0 Nostalgia</title>
+    <link>https://aeroxptech.github.io/fsociety.py/assets/webassets/assets/rss/rss.html</link>
+    <description>A small Webcore site made by Techx32 from fsociety team</description>
+    <language>en-us</language>
+
+    <!-- Your first article (newest on top) -->
+    <item>
+      <title>My First Webcore Post</title>
+      <link>https://yourwebsite.com/my-first-post.html</link>
+      <description>This is a short description of my post. You can write a few sentences here.</description>
+      <pubDate>Sat, 18 Apr 2026 12:00:00 GMT</pubDate>
+    </item>
+
+    <!-- Add more items here (newest first) -->
+    <item>
+      <title>How I Made Glossy Buttons</title>
+      <link>https://yourwebsite.com/gloss-buttons.html</link>
+      <description>Step-by-step guide on making that perfect Web 2.0 shine.</description>
+      <pubDate>Fri, 17 Apr 2026 18:30:00 GMT</pubDate>
+    </item>
+
+  </channel>
+</rss>

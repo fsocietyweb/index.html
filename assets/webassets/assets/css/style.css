@@ -1,0 +1,114 @@
+:root {
+  --bg: #0f0f12;
+  --text: #ffffff;
+  --text-soft: rgba(255,255,255,0.72);
+
+  --glass: rgba(255,255,255,0.08);
+  --border: rgba(255,255,255,0.14);
+
+  --shadow: 0 10px 35px rgba(0,0,0,0.22);;
+}
+
+body {
+  color: var(--text);
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.58), rgba(0,0,0,0.9)),
+    url("../images/background2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Pixel', sans-serif;
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/fartingisfun.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header,
+.navbar-top,
+.footer,
+.welcome,
+.creator-card {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.creator-card img {
+  border: 4px solid #fff;
+}
+
+.guestbook {
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.changelog {
+  width: min(700px, 92%);
+  scroll-behavior: smooth;
+  margin: 0 auto 60px auto;
+  padding: 20px;
+
+  max-height: 320px;      /* ~5–6 entries visible */
+  overflow-y: auto;       /* enables scrolling */
+
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* individual changelog entries */
+.changelog-entry {
+  padding: 12px 14px;
+  margin-bottom: 10px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+
+  transition: 0.25s ease;
+}
+
+.changelog-entry:hover {
+  background: rgba(255,255,255,0.18);
+  transform: translateX(4px);
+}
+
+.changelog::-webkit-scrollbar {
+  width: 8px;
+}
+
+.changelog::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+}
+
+.changelog::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.marqueebox {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.htxt {
+  background: linear-gradient(to bottom, 
+    #c8ffc5 0%, 
+    #1fbf24 55%,
+    #009a05 55%, 
+    #457a28 100%
+);
+text-align: center;
+}

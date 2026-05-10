@@ -1,0 +1,263 @@
+/* =========================
+   base.css
+   Layout / Structure / Shared Styling
+   ========================= */
+
+:root {
+  --blur: 14px;
+  --radius: 24px;
+  --radius-small: 16px;
+
+  --max-width: 1110px;
+  --transition: 0.25s ease;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Structure */
+body {
+  min-height: 100vh;
+  font-family: Inter, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Shared Glass Areas */
+.header,
+.navbar-top,
+.footer,
+.welcome,
+.techx,
+.fsocietylinux,
+.creator-card {
+  backdrop-filter: blur(var(--blur)) saturate(1.15);
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(1.15);
+  transition: var(--transition);
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px 42px;
+  border-radius: var(--radius-small);
+  z-index: 1000;
+}
+
+.webtitle {
+  width: 150px;
+  text-align: center;
+}
+
+/* Top Navbar */
+.navbar-top {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 24px;
+  border-radius: var(--radius-small);
+  z-index: 1000;
+}
+
+.navbar-top a {
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+/* Welcome Card */
+.welcome {
+  width: min(var(--max-width), 92%);
+  margin: 130px auto 40px auto;
+  padding: 30px;
+  border-radius: var(--radius);
+  text-align: left;
+}
+
+.welcomemms {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Creator Grid */
+.creators-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 30px;
+  justify-items: center;
+  max-width: 1100px;
+  margin: 90px auto;
+}
+
+/* Creator Card */
+.creator-card {
+  width: 240px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 16px;
+}
+
+.creator-card img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* Grid Positions */
+.techx {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.fsocietylinux {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.billiebytez {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  justify-self: center;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  padding: 10px 16px;
+  border-radius: var(--radius-small);
+  font-size: 0.95rem;
+}
+
+/* Text */
+.text {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    width: 92%;
+    padding: 15px;
+  }
+
+  .navbar-top {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .welcome {
+    margin-top: 110px;
+    padding: 22px;
+  }
+
+  .creators-row {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .techx,
+  .fsocietylinux,
+  .billiebytez {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+.cheedder,
+.textingcheedder {
+  text-align: center;
+}
+
+#rss-feed {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rss-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.rss-list li {
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rss-list li:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.02) translateX(5px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.rss-list a {
+    color: #e8faff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.rss-list a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+#goupbutton {
+  text-align: center !important;
+  color: white;
+}
+
+.memberslistweb {
+    grid-template-columns: 1fr;
+    gap: 22px;
+
+  .memlistweb  {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+.memberslistweb background {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;  
+}
+
+.web-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  justify-items: center;
+  max-width: 1100px;
+  margin: 90px auto;
+}

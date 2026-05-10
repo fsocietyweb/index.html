@@ -1,0 +1,29 @@
+{
+  "music": [
+    {
+      "title": "Fsociety",
+      "file": "fsociety.mp3",
+      "artist": "by fsociety"
+    },
+    {
+        "title": "Trillium",
+        "file": "Trillium.mp3",
+        "artist": "by S3RL"
+    },
+    {
+        "title": "Too Late",
+        "file": "too late.mp3",
+        "artist": "by RemaX"
+    },
+    {
+        "title": "Fsociety Jumpstyle666",
+        "file": "Fsociety w~fsociety_linux.mp3",
+        "artist": "by fsociety_linux"
+    },
+    {
+        "title": "Act Right",
+        "file": "Act Right.mp3",
+        "artist": "by Femtanyl"
+    }
+  ]
+}

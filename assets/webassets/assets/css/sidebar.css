@@ -1,0 +1,143 @@
+
+/* =========================
+   ROOT THEME
+========================= */
+:root {
+  --bg: #0b0b0d;
+  --text: rgba(255,255,255,0.92);
+  --text-soft: rgba(255,255,255,0.65);
+
+  --glass: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.12);
+
+  --blur: 15px;
+
+  --shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* =========================
+   SIDEBAR CONTAINER
+========================= */
+.sidebar-left {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 220px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.08));
+  border: 1px solid rgba(255,255,255,0.2);
+  border-left: none;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.05);
+  backdrop-filter: blur(calc(var(--blur) + 6px));
+  -webkit-backdrop-filter: blur(calc(var(--blur) + 6px));
+
+  padding: 18px 14px;
+  border-radius: 0 24px 24px 0;
+  overflow: hidden;
+
+  z-index: 1000;
+}
+
+/* =========================
+   LIST RESET
+========================= */
+.sidebar-left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   CATEGORY TITLE (<strong>)
+========================= */
+.sidebar-left li strong {
+  display: block;
+
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: var(--text-soft);
+
+  margin: 16px 0 6px;
+  padding-bottom: 4px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+
+/* =========================
+   LINKS + BUTTONS
+========================= */
+.sidebar-left a,
+.sidebar-left button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 15px;
+
+  color: var(--text-soft);
+  text-decoration: none;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  cursor: pointer;
+
+  padding: 10px 12px;
+  margin-bottom: 8px;
+
+  transition: 0.2s ease, transform 0.25s ease;
+}
+
+/* hover */
+.sidebar-left a:hover,
+.sidebar-left button:hover {
+  color: var(--text);
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.18);
+  transform: translateX(6px);
+}
+
+/* active page */
+.sidebar-left a.active {
+  color: var(--text);
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.22);
+}
+
+.sidebar-left a i {
+  color: #a0f0ff;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* icons */
+.sidebar-left i {
+  font-size: 16px;
+  width: 18px;
+  text-align: center;
+}
+
+/* =========================
+   MOBILE SIDEBAR BEHAVIOR
+========================= */
+@media (max-width: 900px) {
+
+  .sidebar-left {
+    top: 0;
+    height: 100%;
+    transform: translateX(-110%); /* hidden */
+    border-radius: 0;
+  }
+
+  .sidebar-left.open {
+    transform: translateX(0); /* visible */
+  }
+}
+
+/* hide button on desktop */
+.menu-toggle {
+  display: none;
+}
