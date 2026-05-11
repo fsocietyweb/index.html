@@ -33,10 +33,13 @@
   -webkit-backdrop-filter: blur(calc(var(--blur) + 6px));
 
   padding: 18px 14px;
-  border-radius: 0 24px 24px 0;
+  /*border-radius: 0 24px 24px 0;*/
   overflow: hidden;
 
   z-index: 1000;
+
+  height: 100%; /* volle Höhe von .wrapper */
+  box-sizing: border-box; 
 }
 
 /* =========================

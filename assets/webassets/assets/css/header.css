@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: whitesmoke;
+    border-bottom: 1px solid #ffffff;
+    background-color: rgb(100, 100, 100);
+}
+
+/* Linke Seite: Text */
+.header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-left h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-left p {
+    font-size: 14px;
+    color: #ffffff; /* dezenter Untertext */
+    text-align: center;
+}
+
+.header-left h4 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webspace</title>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../fsociety_web/assets/css/crt.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+:root {
+    font-family: webst;
+  cursor: url('../assets/cursors/Arrow.cur'), auto !important;
+}
+    
+.wrapper {
+display: flex;
+flex: 1; /* nimmt die verbleibende Höhe ein */
+}
+
+@font-face {
+    font-family: webst;
+    src: url(../fsociety_web/assets/fonts/f.ttf);
+}
+
+aside {
+    padding: 10px 20px;
+    border-right: 1px solid #ffffff;
+    background-color: rgba(100, 100, 100, 0.500);
+    width: 125px;
+    height: 100%; /* volle Höhe von .wrapper */
+    box-sizing: border-box; /* damit Padding die Höhe nicht überschreitet */
+}
+
+li {
+    color:whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: whitesmoke;
+    border-bottom: 1px solid #ffffff;
+    background-color: rgba(100, 100, 100, 0.500);
+}
+
+/* Linke Seite: Text */
+.header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-left h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-left p {
+    font-size: 14px;
+    color: #ffffff; /* dezenter Untertext */
+}
+
+/* Rechte Seite: Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+        <header>
+        <div class="header-left">
+            <h1 style="font-family: robot; font-size: 30px;">Techx32's Web</h1>
+            <p>My Webspace</p>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <aside>
+            <ul>
+                <li><a href="../../../index.html" style="color: white;">Back to Selection</a></li>
+            </ul>
+        </aside>
+
+        <h2>Techx32's Webspace</h2>
+
+
+    </div>
+<script src="../assets/javascript/title.js"></script>
+</body>
+</html>

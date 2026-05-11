@@ -39,7 +39,6 @@ body {
   transition: var(--transition);
 }
 
-/* Header */
 .header {
   position: fixed;
   top: 30px;
@@ -130,6 +129,22 @@ body {
 }
 
 .billiebytez {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  justify-self: center;
+}
+
+#techx {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#fsocietylinux {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#billiebytez {
   grid-column: 1 / span 2;
   grid-row: 1;
   justify-self: center;
