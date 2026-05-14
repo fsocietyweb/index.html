@@ -69,7 +69,7 @@ function renderLibrary(tracks) {
     div.innerHTML = `
       <div style="flex:1;">
         <strong>${track.title}</strong><br>
-        <small>${track.artist || 'Unbekannter Artist'}</small>
+        <small>${track.artist || 'Unknown Artist'}</small>
       </div>
       <button onclick="playLocalTrack('${track.file}')">▶ Play</button>
     `;

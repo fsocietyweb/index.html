@@ -1,0 +1,9 @@
+@font-face {
+    font-family: global1;
+    src: url(../../fsociety_web/assets/fonts/f.ttf);
+}
+
+@font-face {
+    font-family: global2;
+    src: url(../../fsociety_web/assets/fonts/m.ttf);
+}

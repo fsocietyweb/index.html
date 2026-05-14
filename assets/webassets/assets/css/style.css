@@ -7,25 +7,25 @@
   --border: rgba(255,255,255,0.14);
 
   --shadow: 0 10px 35px rgba(0,0,0,0.22);;
+
+   background-image: url(../images/daniele_36.jpg); 
+   background-attachment: fixed;
+   background-size: cover;
+
+  color: white;
 }
 
 body {
-  color: var(--text);
-  background:
-    linear-gradient(180deg, rgba(0,0,0,0.58), rgba(0,0,0,0.9)),
-    url("../images/background2.jpg") no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Pixel', sans-serif;
+  font-family: 'Pixel', sans-serif;
 }
 
 @font-face {
     font-family: 'Pixel';
-    src: url('../fonts/fartingisfun.ttf') format('truetype');
+    src: url('../../fsociety_web/assets/fonts/f.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-.header,
 .navbar-top,
 .footer,
 .welcome,
@@ -33,6 +33,16 @@ body {
   background: var(--glass);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
+  backdrop-filter: blur(15px);
+  background-color: rgba(152, 147, 147, 0.571);
+}
+
+.header {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(15px);
+  background-color: rgba(152, 147, 147, 0.315);
 }
 
 .creator-card img {
