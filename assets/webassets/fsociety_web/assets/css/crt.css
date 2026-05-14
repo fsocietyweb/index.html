@@ -40,15 +40,15 @@ body::before {
     opacity: 0.1;
     z-index: 10000;
     pointer-events: none;
-    animation: scanline 8s linear infinite;
+    /* animation: scanline 8s linear infinite; */
 }
 
 /* 3. Screen Flicker & Distortion */
 body {
-    animation: flicker 0.15s infinite;
+    /* animation: flicker 0.15s infinite; */
     /* Vignette effect for curved tube look */
     box-shadow: inset 0 0 150px rgba(0,0,0,0.5);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 /* --- Animations --- */

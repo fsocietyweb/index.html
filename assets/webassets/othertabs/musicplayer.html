@@ -4,29 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fs0c13ty - Media Player</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/sidebar.css">
   <link rel="stylesheet" href="../assets/css/music.css">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <body>
-<aside class="sidebar-left">
+<div class="wrapper">
+<aside id="sidebar" class="sidebar-left">
   <ul>
 
-    <li><strong>This Website</strong></li>
-    <li><a href="../../../index.html">Home</a></li>
-    <li><a href="aboutus.html"> About us</a></li>
-    <li><a href="musicplayer.html">Music Player</a></li>
+    <li><strong>Navigation</strong></li>
+    <li><a href="main.html"><i class="fa-solid fa-house"></i>Home</a></li>
+    <li><a href="aboutus.html"><i class="fa-solid fa-user"></i>About us</a></li>
+    <li><a href="musicplayer.html"><i class="fa-solid fa-music"></i>Music Player</a></li>
+    <li><a href="#guestbook"><i class="fa-solid fa-book"></i>Guestbook</a></li>
 
-    <li><strong>Other Websites</strong></li>
-    <li><a href="https://aeroxptech.github.io/index">Techx Homepage</a></li>
-    <li><a href="https://oskarn143-cpu.github.io/phasmo-help/">Bytes Homepage</a></li>
+    <li><strong>Links</strong></li>
+    <li><a href="https://aeroxptech.github.io/index"><i class="fa-solid fa-link"></i>Techx Homepage</a></li>
+    <li><a href="https://oskarn143-cpu.github.io/phasmo-help/"><i class="fa-solid fa-code-branch"></i>Bytes Homepage</a></li>
+    <li><a href="https://fsocietyweb.github.io/index.html"><i class="fa-solid fa-terminal"></i>Fsociety Project</a></li>
+    <li><a href="https://github.com/fsocietyweb"><i class="fa-brands fa-github"></i>GitHub</a></li>
+
+    <li><strong>Others</strong></li>
+    <li><a href="https://forum.frutigeraeroarchive.org/"><i class="fa-solid fa-rss"></i>FAA Forum</a></li>
+    <li><a href="mailto:aeroxptech@gmail.com"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+    <li><a href="https://frutigeraeroarchive.org/webring"><i class="fa online fa-globe"></i>FAA Webring</a></li>
+    <li><a href="#archive"><i class="fa-solid fa-box-archive"></i>Archive</a></li>
+
+    <li><strong>Parts of the Web</strong></li>
+    <li><a href="../fsociety_web/fsociety.html"><i class="fa-solid fa-user-secret"></i>Fsociety Web Part</a></li>
+    <li><a href="../fportfolio/webspace.html"><i class="fa-solid fa-shield"></i>CyberSecurity Part</a></li>
+    <li><a href="../../../index.html"><i class="fa-solid fa-house"></i>Selection</a></li>
 
   </ul>
 </aside>
+</div>
   <div class="player">
-    <h1>Fs0c13ty M3d14 Pl4y3r ARCHIVED!!!</h1>
-    <h4>Please mail me if content needs to be Removed/Added aeroxptech@gmail.com</h4><br>
+    <h1>Media Player</h1>
 
     <div class="search-box">
       <input type="text" id="searchInput" placeholder="Search Your Music..." onkeyup="if(event.key === 'Enter') searchMusic()">

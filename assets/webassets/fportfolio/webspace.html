@@ -3,14 +3,20 @@
 <head>
     <title>Webspace</title>
     <link rel="stylesheet" href="../assets/css/base.css">
-    <link rel="stylesheet" href="../fsociety_web/assets/css/crt.css">
+   <!--<link rel="stylesheet" href="../fsociety_web/assets/css/crt.css">-->
+    <link rel="stylesheet" href="../fsociety_web/assets/css/style.css">
+    <link rel="font" href="../fsociety_web/assets/fonts/f.ttf">
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
 :root {
     font-family: webst;
   cursor: url('../assets/cursors/Arrow.cur'), auto !important;
 }
-    
+   
+.links {
+    color: white;
+}
+
 .wrapper {
 display: flex;
 flex: 1; /* nimmt die verbleibende Höhe ein */
@@ -77,30 +83,217 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-h2 {
+aside ul li a {
+    color:#ffffff;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 30px;
+    flex: 1;
+    overflow-y: auto; /* scrollt bei langen Artikeln */
+    color: whitesmoke;
+    line-height: 1.85;
+}
+
+article p,
+article ul,
+article pre,
+article h2,
+article h3 {
+    margin-bottom: 1.25rem;
+}
+
+article ul {
+    padding-left: 24px;
+}
+
+article pre {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 14px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.h2 {
     text-align: center;
 }
 </style>
 </head>
 <body>
-        <header>
-        <div class="header-left">
-            <h1 style="font-family: robot; font-size: 30px;">Techx32's Web</h1>
-            <p>My Webspace</p>
-        </div>
-    </header>
-
-    <div class="wrapper">
-        <aside>
-            <ul>
-                <li><a href="../../../index.html" style="color: white;">Back to Selection</a></li>
-            </ul>
-        </aside>
-
-        <h2>Techx32's Webspace</h2>
-
-
+<header>
+    <div class="header-left">
+        <h1 style="font-family: robot; font-size: 30px;">Techx32's Cyber Security Tipps</h1>
+        <p>All i use for Security</p>
     </div>
-<script src="../assets/javascript/title.js"></script>
+</header>
+
+<div class="wrapper">
+    <aside>
+        <ul>
+            <li><a href="../../../index.html">Back To Selection</a></li>
+        </ul>
+    </aside>
+    <main>
+        <article style="font-family: mrrobot;" id="top">
+            <h2 style="text-align:center;">Cyber Security Toolkit</h2>
+            <p>Welcome to the Cyber Security web. This page introduces the tools and practices I use for personal security, privacy, and learning. It is meant to help you explore safe cyber hygiene, useful apps, and the mindset behind responsible hacking.</p>
+
+            <section>
+                <h3>Why cybersecurity matters</h3>
+                <p>Security is not only about tools. It is also about making smart choices, protecting your devices, and understanding the risks in everyday digital life.</p>
+                <p>This page focuses on practical steps you can take right now, whether you are using a phone or a laptop.</p>
+            </section>
+
+            <section>
+                <h3>Mobile security setup</h3>
+                <p>On my Samsung Galaxy A05s (rooted), I use apps that give me more control over my device and privacy. Root access lets me modify the system, but it also means I must choose secure apps carefully.</p>
+                <ul>
+                    <li><strong>F-Droid:</strong> A trusted open-source app store for security tools and utilities missing from Google Play.</li>
+                    <li><strong>Proton VPN:</strong> Encrypts your internet traffic and hides your IP address when using public Wi-Fi.</li>
+                    <li><strong>Tor Browser:</strong> Routes your browsing through multiple servers for stronger anonymity and access to restricted content.</li>
+                    <li><strong>Termux:</strong> A terminal emulator for Android that installs Linux-style packages and runs scripts on your phone.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Using Termux safely</h3>
+                <p>Termux is useful for learning command-line tools, editing HTML, and running small Python programs on your phone. It is a good place to practice, as long as you avoid unsafe downloads and keep the system updated.</p>
+                <p>Common Termux commands I use:</p>
+                <pre><code>pkg update
+pkg install python
+pkg install git
+</code></pre>
+            </section>
+
+            <section>
+                <h3>Tools for desktop and laptop</h3>
+                <p>On PC and laptop, I use a few trusted tools for development, research, and secure browsing.</p>
+                <ul>
+                    <li><strong>Kali Linux xfce4:</strong> A security-focused Linux distro for learning and testing tools xfce4 uses less Resources for faster performance.</li>
+                    <li><strong>Firefox Unlocked:</strong> A browser with stronger privacy controls and fewer restrictions.</li>
+                    <li><strong>VS Code:</strong> My editor for writing code, HTML, and automation scripts.</li>
+                    <li><strong>Built-in terminal:</strong> Access to the command line for running scripts and managing packages.</li>
+                    <li><strong>GitHub:</strong> Source control and storage for my scripts, websites, and projects.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Install the basic environment</h3>
+                <p>For a Debian-based Linux environment, start with these essential packages.</p>
+                <pre><code>sudo apt update
+sudo apt install python3 ruby php</code></pre>
+                <p>On many Linux, macOS, and Android systems, <code>nano</code> is already installed by default. If it isn't present, the command above will install it, or you can use another editor like <code>vi</code> or <code>code</code>.</p>
+                <p>After installing, you can edit web files like <code>index.html</code> with <code>nano</code> or use your preferred editor.</p>
+            </section>
+
+            <section>
+                <h3>Why should you use One of these OS's in the list</h3>
+                <ul>
+                    <li><strong>Kali Linux:</strong> Great for Hacking, Testing Your Software etc</li>
+                    <li><strong>Arch Linux:</strong> You Get More Customizing Allowence</li>
+                    <li><strong>Linux Mint:</strong> its Good for New Linux Users it uses xfce, Mate, And Cinnamon</li>
+                    <li><strong>VM Linux (aka any Linux ISO on a VM):</strong>Great if you hate Dual Boot or Don't Want to lose data</li>
+                    <li><strong>Tinfoilhat Linux:</strong> Use it if you care about Privacy</li>
+                    <li><strong>AntiX:</strong> Looks Outdated uses IceWM and has no systemd But Gets its job done</li>
+                </ul>
+            </section>
+
+            <section>g
+                <h3>How to learn and practice</h3>
+                <p>Learning cybersecurity is about small consistent steps. Start with understanding the tools, then build simple projects and document what you discover.</p>
+                <p>Some good beginner goals are:</p>
+                <ul>
+                    <li>Set up a secure browser with privacy settings.</li>
+                    <li>Use VPN and Tor only when needed.</li>
+                    <li>Make a basic Python or shell script.</li>
+                    <li>Learn the meaning of commands before running them.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Safety and ethics</h3>
+                <p>This page is about learning, not hacking irresponsibly. Use security tools for protection and education, not to invade other people’s systems or privacy.</p>
+                <p>Good habits include:</p>
+                <ul>
+                    <li>Keep your operating system and apps updated.</li>
+                    <li>Only download software from trusted sources.</li>
+                    <li>Respect other people’s devices and data.</li>
+                    <li>Explore in safe environments, like your own machine or a test lab.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Next steps</h3>R
+                <p>If you want to go deeper, try adding your own notes here, testing small scripts, or exploring the tools on the Fsociety web pages. Keep the ideas simple and keep the content useful.</p>
+            </section>
+
+            <section id="tip-of-day" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); padding: 18px; border-radius: 14px; margin-top: 20px;">
+                <h3>Tip of the Day</h3>
+                <p id="tip-text">Loading a new cyber security tip...</p>
+                <button id="refresh-tip" style="margin-top: 10px; padding: 8px 16px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: white; cursor: pointer;">Get New Tip</button>
+            </section>
+
+            <section style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); padding: 18px; border-radius: 14px; margin-top: 20px;">
+                <h3>Termux nano Tipps</h3>
+                <div contenteditable="true" id="notes-area" style="min-height: 120px; padding: 12px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white; font-family: inherit; outline: none;">
+                    run <code>nano main.py</code> then just copy this 
+                    <pre><code>
+                        import time
+
+                        print("Hello, World!")
+                        time.sleep(2)
+                        print("sudo apt install opsec ahhh")
+                    </code></pre>
+                </div>
+                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-top: 8px;">Your notes are saved locally in your browser.</p>
+            </section>
+        </article>
+    </main>
+</div>
+<script>
+    const tips = [
+        'Use a password manager instead of reusing passwords across sites.',
+        'Keep your software updated to reduce the risk of known exploits.',
+        'When using public Wi-Fi, use a VPN or avoid sensitive activity.',
+        'Test commands in a safe environment before running them on a real system.',
+        'Learn the difference between privacy tools and security tools.',
+        'Check app permissions before installing anything from third-party stores.',
+        'Take notes on what each tool does so you can repeat the process later.'
+    ];
+    const tipText = document.getElementById('tip-text');
+    const refreshButton = document.getElementById('refresh-tip');
+
+    function showRandomTip() {
+        if (tipText) {
+            tipText.textContent = tips[Math.floor(Math.random() * tips.length)];
+        }
+    }
+
+    if (refreshButton) {
+        refreshButton.addEventListener('click', showRandomTip);
+    }
+
+    // Show initial tip
+    showRandomTip();
+
+    // Notes functionality
+    const notesArea = document.getElementById('notes-area');
+    if (notesArea) {
+        // Load saved notes from localStorage
+        const savedNotes = localStorage.getItem('cyberNotes');
+        if (savedNotes) {
+            notesArea.textContent = savedNotes;
+        }
+
+        // Save notes on input
+        notesArea.addEventListener('input', function() {
+            localStorage.setItem('cyberNotes', notesArea.textContent);
+        });
+    }
+</script>
 </body>
 </html>
