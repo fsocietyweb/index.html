@@ -8,7 +8,9 @@
 
   --shadow: 0 10px 35px rgba(0,0,0,0.22);;
 
-   background-image: url(../images/daniele_36.jpg); 
+   background-image:
+    linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.253)),
+    url(../images/wp4275022-super-mario-sunshine-wallpapers.png); 
    background-attachment: fixed;
    background-size: cover;
 
@@ -34,7 +36,7 @@ body {
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   backdrop-filter: blur(15px);
-  background-color: rgba(152, 147, 147, 0.571);
+  background: rgba(122, 122, 122, 0.722);
 }
 
 .header {

@@ -36,39 +36,8 @@ body {
 .techx,
 .fsocietylinux,
 .creator-card {
-  background-color: rgba(100, 100, 100, 0.645);
+  background-color: rgba(92, 92, 92, 0.645);
   transition: var(--transition);
-}
-
-#mainheader {
-  position: static;
-  z-index: 1000;
-  height: 60px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  color: whitesmoke;
-  border-bottom: 1px white;
-  background-color: rgba(0, 0, 0, 0.25);
-}
-
-.header-left {
-    display: flex;
-    flex-direction: column;
-}
-
-.header-left h1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.header-left p {
-    font-size: 14px;
-    color: #ffffff; /* dezenter Untertext */
 }
 
 /* Rechte Seite: Navbar */
